@@ -1,10 +1,1031 @@
+<!-- Created by Yulian -->
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>✔️osano</title>
-        <style>
-            html, body { width: 100vw; height: 100vh;} body { height: 100%;     background:linear-gradient(#000000,#6169ab,#000000, #1a267a,#17171b);} /*pre-loader section */.pre ul{list-style-type:none;padding:10px;text-align:right;margin-top:60px;} .pre ul li{display:inline;margin-top:20px;margin-left:10px;    padding:20px 15px; } .pre ul li a{     letter-spacing: 3px;text-decoration:none;color:white;font-size:32px;vertical-align:middle;padding-left:10px;padding-right:10px;margin-right:40px;     background-color: #2980b;} .pre ul li a:hover{    font-weight:bold; transition: 0.5s all ease-in ; padding-top:20px;    padding-bottom:20px;    border-bottom:2px solid indigo;    border-radius:0px; color: #000;    } .loading{ top: 50%; left: 50%; position: absolute; transform: translate(-50%,-50%); height: 60px; display: flex; align-items: center; width: 75px; height: 100px;}.myBar{     position: absolute; bottom: 0; width: 10px; height: 65%; background: #fff; -webkit-transform-origin: center bottom; transform-origin: center bottom; box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);}.myBar:nth-child(1) { left: 0px; -webkit-transform: scale(1, 0.2); transform: scale(1, 0.2); -webkit-animation: barUp1 4s infinite; animation: barUp1 4s infinite;}.myBar:nth-child(2) { left: 15px; -webkit-transform: scale(1, 0.4); transform: scale(1, 0.4); -webkit-animation: barUp2 4s infinite; animation: barUp2 4s infinite;}.myBar:nth-child(3) { left: 30px; -webkit-transform: scale(1, 0.6); transform: scale(1, 0.6); -webkit-animation: barUp3 4s infinite; animation: barUp3 4s infinite;}.myBar:nth-child(4) { left: 45px; -webkit-transform: scale(1, 0.8); transform: scale(1, 0.8); -webkit-animation: barUp4 4s infinite; animation: barUp4 4s infinite;}.myBar:nth-child(5) { left: 60px; -webkit-transform: scale(1, 1); transform: scale(1, 1); -webkit-animation: barUp5 4s infinite; animation: barUp5 4s infinite;}.myBall { position: absolute; bottom: 25px; left: 0; width: 10px; height: 10px; background: #fff; border-radius: 50%; -webkit-animation: ball 4s infinite; animation: ball 4s infinite;} @-webkit-keyframes ball { 0% { -webkit-transform: translate(0, 0); transform: translate(0, 0); } 5% { -webkit-transform: translate(8px, -14px); transform: translate(8px, -14px); } 10% { -webkit-transform: translate(15px, -10px); transform: translate(15px, -10px); } 17% { -webkit-transform: translate(23px, -24px); transform: translate(23px, -24px); } 20% { -webkit-transform: translate(30px, -20px); transform: translate(30px, -20px); } 27% { -webkit-transform: translate(38px, -34px); transform: translate(38px, -34px); } 30% { -webkit-transform: translate(45px, -30px); transform: translate(45px, -30px); } 37% { -webkit-transform: translate(53px, -44px); transform: translate(53px, -44px); } 40% { -webkit-transform: translate(60px, -40px); transform: translate(60px, -40px); } 50% { -webkit-transform: translate(60px, 0); transform: translate(60px, 0); } 57% { -webkit-transform: translate(53px, -14px); transform: translate(53px, -14px); } 60% { -webkit-transform: translate(45px, -10px); transform: translate(45px, -10px); } 67% { -webkit-transform: translate(37px, -24px); transform: translate(37px, -24px); } 70% { -webkit-transform: translate(30px, -20px); transform: translate(30px, -20px); } 77% { -webkit-transform: translate(22px, -34px); transform: translate(22px, -34px); } 80% { -webkit-transform: translate(15px, -30px); transform: translate(15px, -30px); } 87% { -webkit-transform: translate(7px, -44px); transform: translate(7px, -44px); } 90% { -webkit-transform: translate(0, -40px); transform: translate(0, -40px); } 100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }} @keyframes ball { 0% { -webkit-transform: translate(0, 0); transform: translate(0, 0); } 5% { -webkit-transform: translate(8px, -14px); transform: translate(8px, -14px); } 10% { -webkit-transform: translate(15px, -10px); transform: translate(15px, -10px); } 17% { -webkit-transform: translate(23px, -24px); transform: translate(23px, -24px); } 20% { -webkit-transform: translate(30px, -20px); transform: translate(30px, -20px); } 27% { -webkit-transform: translate(38px, -34px); transform: translate(38px, -34px); } 30% { -webkit-transform: translate(45px, -30px); transform: translate(45px, -30px); } 37% { -webkit-transform: translate(53px, -44px); transform: translate(53px, -44px); } 40% { -webkit-transform: translate(60px, -40px); transform: translate(60px, -40px); } 50% { -webkit-transform: translate(60px, 0); transform: translate(60px, 0); } 57% { -webkit-transform: translate(53px, -14px); transform: translate(53px, -14px); } 60% { -webkit-transform: translate(45px, -10px); transform: translate(45px, -10px); } 67% { -webkit-transform: translate(37px, -24px); transform: translate(37px, -24px); } 70% { -webkit-transform: translate(30px, -20px); transform: translate(30px, -20px); } 77% { -webkit-transform: translate(22px, -34px); transform: translate(22px, -34px); } 80% { -webkit-transform: translate(15px, -30px); transform: translate(15px, -30px); } 87% { -webkit-transform: translate(7px, -44px); transform: translate(7px, -44px); } 90% { -webkit-transform: transl/ate(0, -40px); transform: translate(0, -40px); } 100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }}@-webkit-keyframes barUp1 { 0% { -webkit-transform: scale(1, 0.2); transform: scale(1, 0.2); } 40% { -webkit-transform: scale(1, 0.2); transform: scale(1, 0.2); } 50% { -webkit-transform: scale(1, 1); transform: scale(1, 1); }
-       90% { -webkit-transform: scale(1, 1); transform: scale(1, 1); } 100% { -webkit-transform: scale(1, 0.2); transform: scale(1, 0.2); }}@keyframes barUp1 { 0% { -webkit-transform: scale(1, 0.2); transform: scale(1, 0.2); } 40% { -webkit-transform: scale(1, 0.2); transform: scale(1, 0.2); } 50% { -webkit-transform: scale(1, 1); transform: scale(1, 1); } 90% { -webkit-transform: scale(1, 1); transform: scale(1, 1); } 100% { -webkit-transform: scale(1, 0.2); transform: scale(1, 0.2); }}@-webkit-keyframes barUp2 { 0% { -webkit-transform: scale(1, 0.4); transform: scale(1, 0.4); } 40% { -webkit-transform: scale(1, 0.4); transform: scale(1, 0.4); } 50% { -webkit-transform: scale(1, 0.8); transform: scale(1, 0.8); } 90% { -webkit-transform: scale(1, 0.8); transform: scale(1, 0.8); } 100% { -webkit-transform: scale(1, 0.4); transform: scale(1, 0.4); }}@keyframes barUp2 { 0% { -webkit-transform: scale(1, 0.4); transform: scale(1, 0.4); } 40% { -webkit-transform: scale(1, 0.4); transform: scale(1, 0.4); } 50% { -webkit-transform: scale(1, 0.8); transform: scale(1, 0.8); } 90% { -webkit-transform: scale(1, 0.8); transform: scale(1, 0.8); } 100% { -webkit-transform: scale(1, 0.4); transform: scale(1, 0.4); }}@-webkit-keyframes barUp3 { 0% { -webkit-transform: scale(1, 0.6); transform: scale(1, 0.6); } 100% { -webkit-transform: scale(1, 0.6); transform: scale(1, 0.6); }}@keyframes barUp3 { 0% { -webkit-transform: scale(1, 0.6); transform: scale(1, 0.6); } 100% { -webkit-transform: scale(1, 0.6); transform: scale(1, 0.6); }}@-webkit-keyframes barUp4 { 0% { -webkit-transform: scale(1, 0.8); transform: scale(1, 0.8); } 40% { -webkit-transform: scale(1, 0.8); transform: scale(1, 0.8); } 50% { -webkit-transform: scale(1, 0.4); transform: scale(1, 0.4); } 90% { -webkit-transform: scale(1, 0.4); transform: scale(1, 0.4); } 100% { -webkit-transform: scale(1, 0.8); transform: scale(1, 0.8); }}@keyframes barUp4 { 0% { -webkit-transform: scale(1, 0.8); transform: scale(1, 0.8); } 40% { -webkit-transform: scale(1, 0.8); transform: scale(1, 0.8); } 50% { -webkit-transform: scale(1, 0.4); transform: scale(1, 0.4); } 90% { -webkit-transform: scale(1, 0.4); transform: scale(1, 0.4); } 100% { -webkit-transform: scale(1, 0.8); transform: scale(1, 0.8); }}@-webkit-keyframes barUp5 { 0% { -webkit-transform: scale(1, 1); transform: scale(1, 1); } 40% { -webkit-transform: scale(1, 1); transform: scale(1, 1); } 50% { -webkit-transform: scale(1, 0.2); transform: scale(1, 0.2); } 90% { -webkit-transform: scale(1, 0.2); transform: scale(1, 0.2); } 100% { -webkit-transform: scale(1, 1); transform: scale(1, 1); }}@keyframes barUp5 { 0% { -webkit-transform: scale(1, 1); transform: scale(1, 1); } 40% { -webkit-transform: scale(1, 1); transform: scale(1, 1); } 50% { -webkit-transform: scale(1, 0.2); transform: scale(1, 0.2); } 90% { -webkit-transform: scale(1, 0.2); transform: scale(1, 0.2); } 100% { -webkit-transform: scale(1, 1); transform: scale(1, 1); }
-       }
-        </style>
-     </head> <body> <div class="pre"> <ul>		<li> <a href="vkingtech.netlify.com.">About </a></li> 	 <li> <a href="https://dav-ee.github.io/contacts" >Contacts </a></li> </ul> </div> <div class="loading"> <div class="myBar"></div> <div class="myBar"></div> <div class="myBar"></div> <div class="myBar"></div> <div class="myBar"></div> <div class="myBall"></div> </div> </body> </html>
+
+<!--        Developed by Osano Brian
+
+This website is responsive adaptable to mobile devices, tablets and computers. I hope you like it! -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+    <meta name="description" content="The Best blog"/>
+    <meta name="keywords" content="app, seo, web positioning"/>
+      <meta name="author" content="Osano"/>
+      <title>✔️TechNique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet"/>
+  </head>
+  <body class="body">
+  
+  <!-- Navigation -->
+  
+    <section class="container-1"> 
+      <nav class="navbar">
+          <input type="checkbox" id="check"/>
+          <label for="check" class="check-btn">
+            <div class="check-item check-top"></div>
+            <div class="check-item check-meat"></div>
+            <div class="check-item check-bottom"></div>
+          </label> 
+          <label class="navbar__brand"><a class="navbar__brand-link" href="#" style="color:cyan;">The TechNique</a></label> 
+          <ul class="nav-wrapper">
+              <li class="nav-wrapper__item"><a class="nav-wrapper__link" href="#home-section"><b><u>Home</u></b></a></li>
+              <li class="nav-wrapper__item"><a class="nav-wrapper__link" href="#about-section"><b><u>Our services</u></b></a></li>
+            <li class="nav-wrapper__item"><a class="nav-wrapper__link" href="#menu-section"><b><u>Blo</u>g</b></a></li>
+               <li class="nav-wrapper__item"><a class="nav-wrapper__link" href="#contact-section"><b><u>Contact us</u></b></a></li>
+          </ul>    
+      </nav>
+  
+  <!-- Masthead -->
+  
+      <div class="masthead" id="home-section">
+          <div class="masthead-text">
+            <h1 class="masthead__title">The Best <span class="masthead__title-color">Tech Blog</span></h1>
+                       
+        <div class="mx-auto text-center">
+           <img src="https://media.publit.io/file/20200705_175929.png" class="meow img-circle">
+       </div>
+          <p class="masthead__paragraph" font-style="cursive">Am <b style="color:grey;">Osano Brian</b> from Kisii,Kenya
+              </p><p style="color:grey;"><b>
+                  I love to solve problems, whether its finding the most elegant way to write a line of code or thinking deeper within the base problem.
+
+I love the challenge of finding a way within a problem and discovering solutions.
+As long as there's a problem to solve or a challenge to puzzle over,it's bound to something i like!
+             </b> </p>
+             <p>
+                <b style="color:red;">I</b> <b>always wanted to be a great writer, like mark zuckerberg who developed facebook, or like bill gates the co-founder of microsoft. They have influenced millions of people through their books. I also wanted to be a great psychologist, like William James or Sigmund Freud, who could read people's mind. Of course, I am nowhere close to these people, yet. I am just someone who does some teaching, some research, and some writing. But my dream is still alive.
+          </b>   </p>
+              <p style="color:grey;background-color:#ccffee;">
+           <b>i am a self taught web developer  I am still learning and doing a lot of practice to perfect my skills<br><i style="color:black;">My dream is to become a full-stack Web developer<br>(back-end and front-end)</i> </b>
+          </p>
+          <label class="masthead__btn"><a class="masthead__link" href="#contact-section">Hire Me</a></label>
+        </div>        
+        <div class="masthead-img-1a"> 
+          <img class="container__img-1a" src="https://media.publit.io/watermark/WAxk.jpg">   
+        </div>
+      </div>
+    <marquee behavior="alternate"> <div class="masthead-img-1b"> 
+      <img class="container__img-1b" src="https://media.publit.io/watermark/WAxk.jpg"> 
+      </div></marquee>
+    </section>
+
+  <!-- About -->
+    
+    <section class="about" id="about-section">
+      <div class="content">
+        <h2 class="content__title" style="color:green;">Our services</h2>
+        <hr class="hr"/>
+      </div>
+      <div class="container-2">
+        <div class="col-left-1">
+          <p class="about__paragraph">
+          <b style="color:blue;"><ins>We</ins></b> offer the following services;
+          <li>Web design &Hosting</li>
+            <li>Logo Design</li>
+            <li>Professional Graphic design</li>
+          </ul> 
+       </div>
+        <div class="col-right-1">
+          <img class="container__img-2" src="https://media.publit.io/file/Screenshot_20200702-142526-2.png"/>  
+        </div> 
+      </div>
+    </section>
+  
+ 
+    <section class="menu" id="menu-section">
+      <div class="content">
+        <h2 class="content__title" style="color:green">Blog</h2>
+        <hr class="hr"/>
+        <hr />
+        
+      <hr><hr> 
+      <label class="masthead__btn masthead__btn--menu"><a class="masthead__link masthead__link--menu" href="#"><b style="color:red;">home</b></a></label>
+    </section>
+  
+  <!-- Contact -->
+  
+    <section class="newsletter" id="contact-section">
+      <div class="content content-newsletter">
+        <h2 class="content__title">Contact</h2>
+        <hr class="hr"/>
+      </div>     
+      <div class="subscribe">
+        <h3 class="subscribe__h3 about__title about__title--subscribe">
+        Instant<br>replies✔️
+        </h3>
+        <form align="center">
+<font class="fa">Contact Us today!</font></p>
+<div id="end">
+<div id="end1">
+<div id="end1c">
+<p class="conp"><font class="fa fa-map-marker"></font> 520 9th Selassie ave,Nairobi</p>
+<p class="conp"><font class="fa fa-fax"></font> +264769146217</p>
+<p class="conp"><font class="fa fa-envelope"></font> technique0707@gmail.com</p>
+      </form>
+      </div>
+      </div>
+          <label class="masthead__btn masthead__btn--menu"><a class="masthead__link masthead__link--menu" href="https://api.whatsapp.com/send?phone=+254769146217&text=hello_&source=&data=#"><small>&nbsp;</small> <b style="color:grey;">whatsapp me</b><small>&nbsp;</small></a></label>
+        </form>
+        <img class="newsletter__img" src="https://media.publit.io/file/IMG_20200602_105606_209.jpg"/>
+      </div>
+    </section>
+  
+  <!-- Footer -->
+  
+    <footer class="footer">
+      <div class="icons-social">
+        <ul class="list-social">
+          <li class="icons-social__item"><a class="icons-social__link" href="https://api.whatsapp.com/send?phone=+254769146217&text=hello_&source=&data=#"><i class="icons-social__i fab fa-whatsapp"></i></a></li>              
+          <li class="icons-social__item"><a class="icons-social__link" href="https://www.instagram.com/technique_solutions"><i class="icons-social__i fab fa-instagram"></i></a></li>
+          <li class="icons-social__item"><a class="icons-social__link" href="https://www.facebook.com/brian.xander.54"><i class="icons-social__i fab fa-facebook"></i></a></li>
+          <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-twitter"></i></a></li>
+          <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-telegram"></i></a></li>
+        </ul>
+      </div>
+      <div class="container-footer">
+        <p>Developed by <b>Osano  <br> Copyright &copy; 2020<br>|All rights reserved|<br><b><u>TechNique</u></b></p>
+      </div>
+    </footer> 
+    <style>
+    /* Created bybosano */
+
+
+
+.body{  
+  font-family:Sans-serif, Arial;     
+  padding:0;
+  margin:0;
+  background-color:#fff;
+  font-size:16px;
+}
+
+/* ===========================
+    General Styles 
+============================ */
+
+.content{
+  width:84%;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  padding-top:40px;       
+  padding-bottom:50px;
+}
+
+.content__title{
+  text-transform:capitalize;
+  font:bold 32px 'Lora', serif; 
+  font-style:italic;
+  color:#333;
+  text-align:left;
+  margin-top:0;
+  margin-bottom:0;
+  width:100%;
+}
+
+.hr{
+  width:60px;
+  height:2px;
+  background-color:#f6052a;
+  border:0;
+  margin-bottom:50px; 
+  margin-left:0;
+}
+
+/* ===========================
+    Navigation
+============================ */
+
+.container-1{
+  padding:0 102px;
+  min-height:100vh;
+}
+
+.container-1:after{
+  content:'Fresh!';
+  position:absolute;
+  top:559px;
+  bottom:0;
+  right:0;
+  font-size:13vw;   
+  z-indez:-2;
+  font-weight:700;
+  color:#000;
+  opacity:0.07;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:30px 0;
+}
+
+#check{
+  display:none;
+}
+
+.check-btn{
+  position:absolute;
+  height:40px;
+  width:24px;
+  right:40px;
+  top:80px;
+  margin-top:-64px;
+  display:none;
+}
+ 
+.check-item{
+  position:relative;
+  border-radius:3px;
+  background-color:#f8982b;
+  margin-top:8px;
+  -webkit-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+  height:3.5px;
+  width:24px;
+  background:#f6052a;
+}
+ 
+.navbar__brand{
+  font-weight:700;
+  text-transform:uppercase;
+  text-decoration:none;
+  font-size:30px;
+}
+
+.navbar__brand-link{
+  color:red; 
+  text-decoration:none;
+}
+
+.nav-wrapper{
+  position:relative;
+  display:flex;
+}
+
+.nav-wrapper__item{
+  list-style:none;
+  margin:0;
+}
+
+.nav-wrapper__link{
+  position:relative;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:400;
+  padding:4px 15px;
+  color:#333;
+  text-decoration:none;
+  margin:0 20px;
+}
+
+.nav-wrapper__link:hover{
+  color:#f6052a;   
+}
+
+/* ===========================
+    Masthead 
+============================ */
+
+.masthead{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:0px;
+}
+
+.masthead-text{
+  position:relative;
+  max-width:500px;
+  margin-right:10px;
+}
+
+.masthead__title{
+  font-size:54px;
+  text-transform:uppercase;
+  font-weight:800;
+  line-height:65px;
+  color:#333;
+}
+
+.masthead__title-color{
+  color:#f6052a; 
+}
+
+.masthead__paragraph{
+  font-size:18px;
+  color:#333;
+  line-height:32px;
+  margin:20px 0;
+}
+
+.masthead__link{
+  display:inline-block;
+  color:#333;
+  cursor:pointer;
+  position:relative;
+  transition:all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  border:2px solid blue;
+}
+
+.masthead__link:hover{
+  text-shadow:nthree;
+}
+
+.masthead__link:hover:before{
+  left:0%;
+  right:auto;
+  width:100%;
+}
+
+.masthead__link:before{
+  position:absolute;
+  top:0px;
+  right:0px;
+  height:100%;
+  width:0px;
+  z-index:-1;
+  content:'';
+  background:#f6052a; 
+  transition:all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.masthead__link:link{
+  position:relative;
+  text-transform:uppercase;
+  font-weight:700;
+  color:#333;
+  letter-spacing:1px;
+  font-size:18px;
+  text-decoration:none;
+  padding:15px;
+  text-align:center;
+  text-shadow:0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -o-transition:all 1s ease;
+  transition:all 1s ease;
+}
+
+.masthead__link:visited{
+  position:relative;
+  text-transform:uppercase;
+  font-weight:700;
+  color:#333;
+  letter-spacing:1px;
+  font-size:18px;
+  text-decoration:none;
+  padding:15px;
+  text-align:center;
+  text-shadow:0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -o-transition:all 1s ease;
+  transition:all 1s ease;
+}
+
+.masthead__link:visited:after{
+  content:"";
+  position:absolute;
+  height:0%;
+  left:50%;
+  top:50%;
+  width:150%;
+  z-index:-1;
+  -webkit-transition:all 0.75s ease 0s;
+  -moz-transition:all 0.75s ease 0s; 
+  -o-transition:all 0.75s ease 0s;
+  transition:all 0.75s ease 0s;
+}
+
+.masthead__link:visited:after{
+  content:"";
+  position:absolute;
+  height:0%;
+  left:50%;
+  top:50%;
+  width:150%;
+  z-index:-1;
+  -webkit-transition:all 0.75s ease 0s;
+  -moz-transition:all 0.75s ease 0s; 
+  -o-transition:all 0.75s ease 0s;
+  transition:all 0.75s ease 0s;
+}
+
+.masthead__link:link:hover{
+  color:#fff;
+  text-shadow:none;
+}
+
+.masthead__link:visited:hover{
+  color:#fff;
+  text-shadow:none;
+}
+
+.masthead-img-1a{
+  position:relative;
+  width:600px;
+  height:600px;
+  filter:drop-shadow(0 10px 6px #020202); 
+}
+
+.container__img-1a{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.masthead-img-1b{
+  filter:drop-shadow(0 10px 6px #020202); 
+  width:430px;
+  height:430px;
+  margin:0 auto;
+  margin-bottom:0px;
+  margin-top:25px;
+  text-align:center;
+  display:none;
+}
+ 
+ .container__img-1b{
+   width:100%;
+   height:100%;
+}
+
+/* ===========================
+    About
+============================ */
+
+.container-2{
+  width:84%; 
+  margin:auto;
+  display:flex;
+  overflow:hidden;
+  align-items:center;
+  padding:0;
+}
+
+.col-left-1{
+  float:left;
+  width:50%;
+  margin-left:0;
+  height:435px;
+}
+
+.about__title{
+  margin-bottom:15px;
+  color:#333;
+  font-weight:700; 
+  font:bold 25px 'Lora', serif;
+  margin-top:0px;
+}
+
+.about__paragraph{
+  width:100%;
+  margin-top:32px;
+  font:Sans-serif, Arial;     
+  font-style:italic;
+  font-size:18px;
+  color:#333;
+  line-height:28px;
+  margin-bottom:0px;
+}
+ 
+.col-right-1{
+  color:#000;      
+  width:50%;             
+  padding:0;
+  text-align:right;
+  height:435px;
+  margin-top:20px;
+}
+ 
+.container__img-2{
+  width:430px;
+  height:430px;
+  box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.13);
+  margin-right:3px;
+}
+
+/* ===========================
+    Menu
+============================ */
+
+.col-menu-1{
+  color:#000;      
+  width:100%;             
+  padding:0;
+  margin-top:20px;
+  text-align:center;
+  height:400px;
+}
+
+.container__img-3{  
+  width:346px;
+  height:346px;
+  box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.13);
+  margin-right:3px;
+  transition:1s;
+  -webkit-transition:0.5s;
+  cursor:pointer;
+  flex:1 1 auto;
+}
+
+.container__img-3:hover{
+  transform:scale(1.05);
+  box-shadow:0 25px 25px -20px  rgba(0,0,0,0.3);
+}
+
+.masthead__btn--menu{
+  margin-top:20px;
+  display:block;
+  text-align:center;
+}
+
+/* ===========================
+    Contact
+============================ */
+
+.newsletter{
+  padding-bottom:100px;
+}
+
+.subscribe{
+  position:relative;
+  height:500px;
+  overflow:hidden;
+  box-shadow:0px 0px 30px 20px rgba(0, 0, 0, 0.12);
+  width:84%; 
+  margin:auto;
+  overflow:hidden;
+  margin-top:20px;
+}
+
+.subscribe__h3{
+  margin:50px 0;
+  width:365.5px;
+  text-align:center;
+  font-weight:normal;
+  color:#ff6b81;
+}
+
+.about__title--subscribe{
+  color:#95a3b3;  
+  margin-top:100px;
+  margin-bottom:125px;
+  width:365.5px;
+  text-align:center;
+  font-weight:500;
+  font-style:italic;
+}
+
+.form{
+  width:365.5px;
+}
+
+.content-input{
+  border:none;
+  padding:10px 40px;
+}
+
+.form__input{
+  display:inline-block;
+  height:50px;
+  line-height:50px;
+  border:none;  
+  outline:none;
+  color:#2f3542;
+  font-size:20px;
+  width:100%;
+  border-bottom:1px solid #a4b0be;
+  font:500 20px 'Lora', serif; 
+  font-style:italic;
+}
+
+.newsletter__img{
+  position:absolute;
+  top:0;
+  right:0;
+  height:500px;
+  width:711px;
+}
+
+/* ===========================
+    Social
+============================ */
+
+.icons-social{
+  padding:5px;
+}
+
+.list-social{
+  text-align:center;
+  padding:0;
+}
+
+.icons-social__item{
+  display:inline-block;
+}
+
+.icons-social__item:active{
+  transform:scale(1.1);
+}
+
+.icons-social__link{
+  font-size:23px;
+  color:magenta;
+  padding:10px;
+}
+
+.icons-social__link:hover{
+  color:red;
+}
+
+/* ===========================
+    Footer
+============================ */
+
+.footer{
+  padding:40px;
+  color:grey;
+  text-align:center;
+  background:black;
+  margin:0;
+}
+
+.container-footer__link{
+  color:#444442;
+  text-decoration:none;
+}
+
+.container-footer__link:hover{
+  color:#f4363b;
+}
+
+/* ===========================
+    Media Queries
+============================ */
+
+@media (max-width: 1000px){
+  .container-1{
+    width:100%;
+    padding:0;
+    display:block;
+    min-height:0;
+  }
+
+  .container-1:after{
+    display:none;
+  }
+
+  .navbar{
+    width:100%;
+    display:block;
+    height:16px;
+    background:black;
+  }
+ 
+  .check-btn{
+    display:block;
+  }
+ 
+  #check:checked + .check-btn .check-top{
+    -webkit-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    margin-top:20px;
+  }
+  #check:checked + .check-btn  .check-bottom{
+    opacity:0;
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+  }
+  #check:checked + .check-btn .check-meat{
+   -webkit-transform:rotate(45deg);
+   transform:rotate(45deg);
+   margin-top:-3.5px;
+  }
+
+  #check:checked ~ .nav-wrapper{
+    left:0;
+  }
+ 
+  .navbar__brand{
+    padding:0 30px;
+    margin-left:5px;
+    line-height:16px;
+  }
+ 
+  .nav-wrapper{
+    position:absolute;
+    width:100%;
+    background-image:
+    url("https://media.publit.io/file/Screenshot_20200702-142526-2.png");
+    left:-100%;
+    text-align:center;
+    transition:all .5s;
+    top:60px;
+    height:60vh;
+    padding:0;
+    display:block;
+    z-index:2;
+  }
+ 
+  .nav-wrapper__item{
+    margin:30px 0;
+    line-height:30px;
+  }
+ 
+  .nav-wrapper__link{
+    color:#595959;
+  }
+
+  .masthead{
+    width:100%;
+    margin-top:80px;
+    text-align:center;
+  }
+ 
+  .masthead-text{
+    max-width:100%;
+    margin:0 65px;
+    text-align:center;
+  }
+ 
+  .masthead__title{
+    display:inline-block;
+    max-width:65%;
+  }
+ 
+  .masthead__paragraph{
+    margin-bottom:30px;
+  }
+ 
+  .masthead-img-1a{
+    display:none;
+  }
+ 
+  .masthead-img-1b{
+    display:block;
+  }
+ 
+  .content{
+    padding-top:20px;       
+    padding-bottom:25px;
+  }
+ 
+  .container-2{
+    display:block;
+  }
+
+  .col-left-1{
+    float:none;
+    width:100%;
+    height:260px;
+  }
+ 
+  .col-right-1{
+    width:100%;             
+    text-align:center;
+  }
+ 
+  .col-menu-1{
+    display:block;
+    height:100%;
+    margin-top:0px;
+  }
+ 
+  .container__img-3{
+    width:430px;
+    height:430px;
+    margin-right:0px;
+    margin-top:13px;
+    margin-bottom:33px;
+  }
+ 
+  .masthead__btn--menu{
+    margin-top:50px;
+  }
+
+  .subscribe{
+    height:100%;
+  }
+ 
+  .subscribe__h3{
+    width:100%;
+  }
+ 
+  .about__title--subscribe{
+    font-size:32px;
+  }
+ 
+  .form{
+    width:100%;
+  }
+ 
+  .content-input{
+    margin-bottom:50px;
+  }
+ 
+  .newsletter__img{
+    position:relative;
+    width:100%;
+    height:457px;
+    margin-top:50px;
+    margin-bottom:-4px;
+  }
+}
+
+@media (max-width: 700px){
+  .newsletter__img{
+    width:565px;
+    height:397px;
+  }
+}
+
+@media (max-width: 450px){
+  .navbar{
+    height:9px;
+  }
+ 
+  .check-btn{
+    right:20px;
+    top:63px;
+    margin-top:-50px;
+  }
+ 
+  .navbar__brand{
+    font-size:25px;
+    padding:0 15px;
+    margin-left:2.5px;
+    line-height:9px;
+  }
+ 
+  .nav-wrapper{
+    height:26vh;
+    top:53px;
+  }
+
+  .nav-wrapper__item{
+    margin:15px 0;
+    line-height:15px;
+  }
+ 
+  .masthead{
+    margin-top:35px;
+  }
+ 
+  .masthead__title{
+    max-width:100%;
+    margin-bottom:30px;
+  }
+ 
+  .masthead__paragraph{
+    margin-top:0;
+  }
+
+  .masthead-img-1b{
+    width:300px;
+    height:300px;
+    margin-top:20px;
+  }
+ 
+  .container__img-1b{
+    width:100%;
+    height:100%;
+  }
+
+  .content{
+    padding-top:10px;       
+    padding-bottom:12.5px;
+  }
+
+  .content__title{
+    font-size:26px;
+    margin-top:35px;
+  }
+
+  .hr{
+    width:48px;
+    margin-bottom:50px; 
+  }
+
+  .col-left-1{
+    height:100%;
+  }
+
+  .about__title{
+    font-size:20px;
+    margin-bottom:10px;
+  }
+
+  .col-right-1{
+    height:300px;
+    width:300px;
+  }
+ 
+  .container__img-2{
+    width:297px;;
+    height:297px;
+    margin:0 auto;
+  }
+ 
+  .container__img-3{
+    width:287px;
+    height:287px;
+    margin-top:8px;
+    margin-bottom:28px;
+  }
+ 
+  .masthead__btn--menu{
+    margin-top:24px;
+  }
+ 
+  .subscribe__h3{
+    margin:20px 0;
+  }
+
+  .about__title--subscribe{  
+    margin:45px 0;
+  }
+
+  .content-input{
+    margin-bottom:20px;
+  }
+
+  .form__input{
+    height:37px;
+    line-height:37px;
+    font-size:16px;
+  }
+
+  .newsletter__img{
+    width:100%;
+    height:211px;
+    margin-top:20px;
+  }
+ 
+  .footer{
+    padding:32px;
+  }
+  
+  .container-footer{
+    font-size:15px;
+  }
+}
+
+@media (max-height: 450px){
+  .nav-wrapper{
+    height:100vh;
+  }
+  
+  .nav-wrapper__item{
+    margin:15px 0;
+    line-height:15px;
+  }
+}
+#end #end1{
+    width:100%;
+    background:rgba(200,200,200,0.7);
+    min-height:350px;
+    padding:6px;
+    float:center;
+}
+#end #end2{
+    min-height:330px;
+    width:50%;
+    background:rgba(180,200,250,0.5);
+    float:center;
+    padding:3%;
+    
+    
+}
+#end #end1c{
+    margin:20px 20px 20px 5%;
+    background:rgba(255,255,255,0.5);
+    padding:10px;
+}
+#end #end1 #end1c .conp{
+    border:5px solid magenta;
+    padding:10px;
+    background:white;
+}
+.fa{
+    color:#33cdff;
+    font-size:18px;
+
+}
+.meow{
+width:150px;
+height:150px;
+
+border:10px red;
+    border-radius:80%;
+}
+</style>
+  </body>
+</html>
